@@ -1,0 +1,51 @@
+/* Set the root to fill the entire viewport */
+#root {
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+  display: flex;
+  flex-direction: column; /* Ensure the table grows vertically */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modify the table container to fill available space */
+.table-container {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  width: 100%; /* Full width of the table container */
+  height: 100%; /* Full height if desired */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Adjust padding and spacing for mobile */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+}

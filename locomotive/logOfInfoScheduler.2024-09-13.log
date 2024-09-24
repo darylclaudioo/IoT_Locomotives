@@ -1,0 +1,1322 @@
+13 Sep 2024; 15:27:10 PM c.e.locomotive.LocomotiveApplication INFO: Starting LocomotiveApplication using Java 21.0.1 with PID 29348 (E:\Kerja\Gap Analysis\IoT Locomotive\locomotive\target\classes started by Albiruni in E:\Kerja\Gap Analysis\IoT Locomotive\locomotive)
+13 Sep 2024; 15:27:10 PM c.e.locomotive.LocomotiveApplication INFO: No active profile set, falling back to 1 default profile: "default"
+13 Sep 2024; 15:27:10 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:27:10 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13 Sep 2024; 15:27:10 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+13 Sep 2024; 15:27:10 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:27:10 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+13 Sep 2024; 15:27:10 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveStatusRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:27:10 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveSummaryRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:27:10 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 2 ms. Found 1 MongoDB repository interface.
+13 Sep 2024; 15:27:10 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat initialized with port 8081 (http)
+13 Sep 2024; 15:27:10 PM o.a.coyote.http11.Http11NioProtocol INFO: Initializing ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:27:10 PM o.a.catalina.core.StandardService INFO: Starting service [Tomcat]
+13 Sep 2024; 15:27:10 PM o.a.catalina.core.StandardEngine INFO: Starting Servlet engine: [Apache Tomcat/10.1.28]
+13 Sep 2024; 15:27:10 PM o.a.c.c.C.[Tomcat].[localhost].[/] INFO: Initializing Spring embedded WebApplicationContext
+13 Sep 2024; 15:27:10 PM o.s.b.w.s.c.ServletWebServerApplicationContext INFO: Root WebApplicationContext: initialization completed in 186 ms
+13 Sep 2024; 15:27:10 PM o.h.jpa.internal.util.LogHelper INFO: HHH000204: Processing PersistenceUnitInfo [name: default]
+13 Sep 2024; 15:27:10 PM o.h.c.i.RegionFactoryInitiator INFO: HHH000026: Second-level cache disabled
+13 Sep 2024; 15:27:10 PM o.s.o.j.p.SpringPersistenceUnitInfo INFO: No LoadTimeWeaver setup: ignoring JPA class transformer
+13 Sep 2024; 15:27:10 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-2 - Starting...
+13 Sep 2024; 15:27:10 PM com.zaxxer.hikari.pool.HikariPool INFO: HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@2c21796d
+13 Sep 2024; 15:27:10 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-2 - Start completed.
+13 Sep 2024; 15:27:10 PM org.hibernate.orm.deprecation WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13 Sep 2024; 15:27:10 PM o.h.e.t.j.p.i.JtaPlatformInitiator INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13 Sep 2024; 15:27:10 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Initialized JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:27:10 PM org.mongodb.driver.client INFO: MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@76f87999, com.mongodb.Jep395RecordCodecProvider@548a311, com.mongodb.KotlinCodecProvider@1a85aa24]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+13 Sep 2024; 15:27:10 PM org.mongodb.driver.cluster INFO: Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1162500}
+13 Sep 2024; 15:27:10 PM o.s.b.d.a.OptionalLiveReloadServer INFO: LiveReload server is running on port 35729
+13 Sep 2024; 15:27:10 PM o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration WARN: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13 Sep 2024; 15:27:10 PM o.a.coyote.http11.Http11NioProtocol INFO: Starting ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:27:10 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat started on port 8081 (http) with context path '/'
+13 Sep 2024; 15:27:10 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=200x100x200, status=Available, kodeLoco=ff263b78-bac4-4613-b88d-b7185d25469e, jam=15:27:10, namaLoco=Lokomotif 9}
+13 Sep 2024; 15:27:10 PM c.e.locomotive.LocomotiveApplication INFO: Started LocomotiveApplication in 0.461 seconds (process running for 9.092)
+13 Sep 2024; 15:27:10 PM o.s.b.d.a.ConditionEvaluationDeltaLoggingListener INFO: Condition evaluation unchanged
+13 Sep 2024; 15:27:10 PM c.e.locomotive.services.MongoService INFO: Fetching from MongoDB...
+13 Sep 2024; 15:27:10 PM o.s.s.s.TaskUtils$LoggingErrorHandler ERROR: Unexpected error occurred in scheduled task
+org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [java.time.LocalDate] for value [13/09/2024]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:182)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:165)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.doConvert(MappingMongoConverter.java:1845)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.doConvert(MappingMongoConverter.java:1837)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.getPotentiallyConvertedSimpleRead(MappingMongoConverter.java:1362)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.getPotentiallyConvertedSimpleRead(MappingMongoConverter.java:1347)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter$DefaultConversionContext.convert(MappingMongoConverter.java:2343)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter$ConversionContext.convert(MappingMongoConverter.java:2191)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter$MongoDbPropertyValueProvider.getPropertyValue(MappingMongoConverter.java:1957)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.readProperties(MappingMongoConverter.java:643)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.populateProperties(MappingMongoConverter.java:560)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:537)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.readDocument(MappingMongoConverter.java:503)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:439)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:435)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:125)
+	at org.springframework.data.mongodb.core.MongoTemplate$ReadDocumentCallback.doWith(MongoTemplate.java:3293)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2927)
+	at org.springframework.data.mongodb.core.MongoTemplate.findAll(MongoTemplate.java:1857)
+	at org.springframework.data.mongodb.core.MongoTemplate.findAll(MongoTemplate.java:1852)
+	at com.example.locomotive.services.MongoService.fetchAllLocomotives(MongoService.java:34)
+	at com.example.locomotive.services.MongoService.fecthData(MongoService.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.time.format.DateTimeParseException: Text '13/09/2024' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2108)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:2010)
+	at java.base/java.time.LocalDate.parse(LocalDate.java:435)
+	at org.springframework.data.convert.Jsr310Converters$StringToLocalDateConverter.convert(Jsr310Converters.java:297)
+	at org.springframework.data.convert.Jsr310Converters$StringToLocalDateConverter.convert(Jsr310Converters.java:289)
+	at org.springframework.core.convert.support.GenericConversionService$ConverterAdapter.convert(GenericConversionService.java:358)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	... 35 common frames omitted
+13 Sep 2024; 15:27:11 PM c.e.l.components.TelegramBotReport ERROR: Unable to deserialize response
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:132)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:32)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at com.example.locomotive.components.TelegramBotReport.sendTelegramMessage(TelegramBotReport.java:43)
+	at com.example.locomotive.components.TelegramBotReport.sendLatestSummary(TelegramBotReport.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61] (through reference chain: org.telegram.telegrambots.meta.api.objects.ApiResponse["result"]->org.telegram.telegrambots.meta.api.objects.Message["from"]->org.telegram.telegrambots.meta.api.objects.User["id"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:361)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1937)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:312)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3831)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:124)
+	... 18 common frames omitted
+Caused by: com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInputCoercion(ParserMinimalBase.java:562)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowInt(ParserMinimalBase.java:624)
+	at com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:1059)
+	at com.fasterxml.jackson.core.base.ParserBase._parseIntValue(ParserBase.java:983)
+	at com.fasterxml.jackson.core.base.ParserBase.getIntValue(ParserBase.java:789)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:526)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	... 30 common frames omitted
+13 Sep 2024; 15:27:20 PM o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener INFO: Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+13 Sep 2024; 15:27:20 PM o.a.coyote.http11.Http11NioProtocol INFO: Stopping ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:27:20 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Closing JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:27:20 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-2 - Shutdown initiated...
+13 Sep 2024; 15:27:20 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-2 - Shutdown completed.
+13 Sep 2024; 15:27:20 PM c.e.locomotive.LocomotiveApplication INFO: Starting LocomotiveApplication using Java 21.0.1 with PID 29348 (E:\Kerja\Gap Analysis\IoT Locomotive\locomotive\target\classes started by Albiruni in E:\Kerja\Gap Analysis\IoT Locomotive\locomotive)
+13 Sep 2024; 15:27:20 PM c.e.locomotive.LocomotiveApplication INFO: No active profile set, falling back to 1 default profile: "default"
+13 Sep 2024; 15:27:20 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:27:20 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13 Sep 2024; 15:27:20 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 6 ms. Found 3 JPA repository interfaces.
+13 Sep 2024; 15:27:20 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:27:20 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+13 Sep 2024; 15:27:20 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveStatusRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:27:20 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveSummaryRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:27:20 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 3 ms. Found 1 MongoDB repository interface.
+13 Sep 2024; 15:27:20 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat initialized with port 8081 (http)
+13 Sep 2024; 15:27:20 PM o.a.coyote.http11.Http11NioProtocol INFO: Initializing ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:27:20 PM o.a.catalina.core.StandardService INFO: Starting service [Tomcat]
+13 Sep 2024; 15:27:20 PM o.a.catalina.core.StandardEngine INFO: Starting Servlet engine: [Apache Tomcat/10.1.28]
+13 Sep 2024; 15:27:20 PM o.a.c.c.C.[Tomcat].[localhost].[/] INFO: Initializing Spring embedded WebApplicationContext
+13 Sep 2024; 15:27:20 PM o.s.b.w.s.c.ServletWebServerApplicationContext INFO: Root WebApplicationContext: initialization completed in 175 ms
+13 Sep 2024; 15:27:20 PM o.h.jpa.internal.util.LogHelper INFO: HHH000204: Processing PersistenceUnitInfo [name: default]
+13 Sep 2024; 15:27:20 PM o.h.c.i.RegionFactoryInitiator INFO: HHH000026: Second-level cache disabled
+13 Sep 2024; 15:27:20 PM o.s.o.j.p.SpringPersistenceUnitInfo INFO: No LoadTimeWeaver setup: ignoring JPA class transformer
+13 Sep 2024; 15:27:20 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-3 - Starting...
+13 Sep 2024; 15:27:20 PM com.zaxxer.hikari.pool.HikariPool INFO: HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@3467791c
+13 Sep 2024; 15:27:20 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-3 - Start completed.
+13 Sep 2024; 15:27:20 PM org.hibernate.orm.deprecation WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13 Sep 2024; 15:27:20 PM o.h.e.t.j.p.i.JtaPlatformInitiator INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13 Sep 2024; 15:27:20 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Initialized JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:27:20 PM org.mongodb.driver.client INFO: MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@76f87999, com.mongodb.Jep395RecordCodecProvider@548a311, com.mongodb.KotlinCodecProvider@1a85aa24]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+13 Sep 2024; 15:27:20 PM org.mongodb.driver.cluster INFO: Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=899900}
+13 Sep 2024; 15:27:20 PM o.s.b.d.a.OptionalLiveReloadServer INFO: LiveReload server is running on port 35729
+13 Sep 2024; 15:27:20 PM o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration WARN: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13 Sep 2024; 15:27:20 PM o.a.coyote.http11.Http11NioProtocol INFO: Starting ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:27:20 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat started on port 8081 (http) with context path '/'
+13 Sep 2024; 15:27:20 PM c.e.locomotive.LocomotiveApplication INFO: Started LocomotiveApplication in 0.449 seconds (process running for 19.077)
+13 Sep 2024; 15:27:20 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=500x400x300, status=Maintenance, kodeLoco=7a8794cc-9a33-4bed-aa21-64f3c47ef97b, jam=15:27:20, namaLoco=Lokomotif 5}
+13 Sep 2024; 15:27:20 PM o.s.b.d.a.ConditionEvaluationDeltaLoggingListener INFO: Condition evaluation unchanged
+13 Sep 2024; 15:27:20 PM c.e.locomotive.services.MongoService INFO: Fetching from MongoDB...
+13 Sep 2024; 15:27:20 PM o.s.s.s.TaskUtils$LoggingErrorHandler ERROR: Unexpected error occurred in scheduled task
+org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [java.time.LocalDate] for value [13/09/2024]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:182)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:165)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.doConvert(MappingMongoConverter.java:1845)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.doConvert(MappingMongoConverter.java:1837)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.getPotentiallyConvertedSimpleRead(MappingMongoConverter.java:1362)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.getPotentiallyConvertedSimpleRead(MappingMongoConverter.java:1347)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter$DefaultConversionContext.convert(MappingMongoConverter.java:2343)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter$ConversionContext.convert(MappingMongoConverter.java:2191)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter$MongoDbPropertyValueProvider.getPropertyValue(MappingMongoConverter.java:1957)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.readProperties(MappingMongoConverter.java:643)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.populateProperties(MappingMongoConverter.java:560)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:537)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.readDocument(MappingMongoConverter.java:503)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:439)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:435)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:125)
+	at org.springframework.data.mongodb.core.MongoTemplate$ReadDocumentCallback.doWith(MongoTemplate.java:3293)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindMultiInternal(MongoTemplate.java:2927)
+	at org.springframework.data.mongodb.core.MongoTemplate.findAll(MongoTemplate.java:1857)
+	at org.springframework.data.mongodb.core.MongoTemplate.findAll(MongoTemplate.java:1852)
+	at com.example.locomotive.services.MongoService.fetchAllLocomotives(MongoService.java:34)
+	at com.example.locomotive.services.MongoService.fecthData(MongoService.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.time.format.DateTimeParseException: Text '13/09/2024' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2108)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:2010)
+	at java.base/java.time.LocalDate.parse(LocalDate.java:435)
+	at org.springframework.data.convert.Jsr310Converters$StringToLocalDateConverter.convert(Jsr310Converters.java:297)
+	at org.springframework.data.convert.Jsr310Converters$StringToLocalDateConverter.convert(Jsr310Converters.java:289)
+	at org.springframework.core.convert.support.GenericConversionService$ConverterAdapter.convert(GenericConversionService.java:358)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	... 35 common frames omitted
+13 Sep 2024; 15:27:21 PM c.e.l.components.TelegramBotReport ERROR: Unable to deserialize response
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:132)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:32)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at com.example.locomotive.components.TelegramBotReport.sendTelegramMessage(TelegramBotReport.java:43)
+	at com.example.locomotive.components.TelegramBotReport.sendLatestSummary(TelegramBotReport.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61] (through reference chain: org.telegram.telegrambots.meta.api.objects.ApiResponse["result"]->org.telegram.telegrambots.meta.api.objects.Message["from"]->org.telegram.telegrambots.meta.api.objects.User["id"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:361)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1937)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:312)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3831)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:124)
+	... 18 common frames omitted
+Caused by: com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInputCoercion(ParserMinimalBase.java:562)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowInt(ParserMinimalBase.java:624)
+	at com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:1059)
+	at com.fasterxml.jackson.core.base.ParserBase._parseIntValue(ParserBase.java:983)
+	at com.fasterxml.jackson.core.base.ParserBase.getIntValue(ParserBase.java:789)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:526)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	... 30 common frames omitted
+13 Sep 2024; 15:27:30 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=500x400x300, status=Not Available, kodeLoco=7c278c76-4745-4eea-aaed-16ee2ec2bbc1, jam=15:27:30, namaLoco=Lokomotif 7}
+13 Sep 2024; 15:27:40 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=300x200x200, status=Not Available, kodeLoco=1c1ccba6-9a5f-4e83-9613-975e6ee4e93a, jam=15:27:40, namaLoco=Lokomotif 1}
+13 Sep 2024; 15:27:42 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Closing JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:27:42 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-3 - Shutdown initiated...
+13 Sep 2024; 15:27:42 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-3 - Shutdown completed.
+13 Sep 2024; 15:31:50 PM c.e.locomotive.LocomotiveApplication INFO: Starting LocomotiveApplication using Java 21.0.1 with PID 19284 (E:\Kerja\Gap Analysis\IoT Locomotive\locomotive\target\classes started by Albiruni in E:\Kerja\Gap Analysis\IoT Locomotive\locomotive)
+13 Sep 2024; 15:31:50 PM c.e.locomotive.LocomotiveApplication INFO: No active profile set, falling back to 1 default profile: "default"
+13 Sep 2024; 15:31:50 PM o.s.b.d.restart.ChangeableUrls INFO: The Class-Path manifest attribute in C:\Users\Albiruni\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+13 Sep 2024; 15:31:50 PM o.s.b.d.restart.ChangeableUrls INFO: The Class-Path manifest attribute in C:\Users\Albiruni\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/C:/Users/Albiruni/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+13 Sep 2024; 15:31:50 PM o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor INFO: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13 Sep 2024; 15:31:50 PM o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor INFO: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13 Sep 2024; 15:31:50 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:31:50 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13 Sep 2024; 15:31:50 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+13 Sep 2024; 15:31:50 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:31:50 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+13 Sep 2024; 15:31:50 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveStatusRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:31:50 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveSummaryRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:31:50 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 5 ms. Found 1 MongoDB repository interface.
+13 Sep 2024; 15:31:51 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat initialized with port 8081 (http)
+13 Sep 2024; 15:31:51 PM o.a.coyote.http11.Http11NioProtocol INFO: Initializing ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:31:51 PM o.a.catalina.core.StandardService INFO: Starting service [Tomcat]
+13 Sep 2024; 15:31:51 PM o.a.catalina.core.StandardEngine INFO: Starting Servlet engine: [Apache Tomcat/10.1.28]
+13 Sep 2024; 15:31:51 PM o.a.c.c.C.[Tomcat].[localhost].[/] INFO: Initializing Spring embedded WebApplicationContext
+13 Sep 2024; 15:31:51 PM o.s.b.w.s.c.ServletWebServerApplicationContext INFO: Root WebApplicationContext: initialization completed in 910 ms
+13 Sep 2024; 15:31:51 PM o.h.jpa.internal.util.LogHelper INFO: HHH000204: Processing PersistenceUnitInfo [name: default]
+13 Sep 2024; 15:31:51 PM org.hibernate.Version INFO: HHH000412: Hibernate ORM core version 6.5.2.Final
+13 Sep 2024; 15:31:51 PM o.h.c.i.RegionFactoryInitiator INFO: HHH000026: Second-level cache disabled
+13 Sep 2024; 15:31:51 PM o.s.o.j.p.SpringPersistenceUnitInfo INFO: No LoadTimeWeaver setup: ignoring JPA class transformer
+13 Sep 2024; 15:31:51 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-1 - Starting...
+13 Sep 2024; 15:31:51 PM com.zaxxer.hikari.pool.HikariPool INFO: HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55039e81
+13 Sep 2024; 15:31:51 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-1 - Start completed.
+13 Sep 2024; 15:31:51 PM org.hibernate.orm.deprecation WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13 Sep 2024; 15:31:52 PM o.h.e.t.j.p.i.JtaPlatformInitiator INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13 Sep 2024; 15:31:52 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Initialized JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:31:52 PM o.s.d.j.r.query.QueryEnhancerFactory INFO: Hibernate is in classpath; If applicable, HQL parser will be used.
+13 Sep 2024; 15:31:52 PM org.mongodb.driver.client INFO: MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@945c884, com.mongodb.Jep395RecordCodecProvider@52ab3693, com.mongodb.KotlinCodecProvider@1ee0aee4]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+13 Sep 2024; 15:31:52 PM org.mongodb.driver.cluster INFO: Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11823100}
+13 Sep 2024; 15:31:52 PM o.s.b.d.a.OptionalLiveReloadServer INFO: LiveReload server is running on port 35729
+13 Sep 2024; 15:31:53 PM o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration WARN: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13 Sep 2024; 15:31:53 PM o.a.coyote.http11.Http11NioProtocol INFO: Starting ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:31:53 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat started on port 8081 (http) with context path '/'
+13 Sep 2024; 15:31:53 PM c.e.locomotive.LocomotiveApplication INFO: Started LocomotiveApplication in 3.233 seconds (process running for 3.69)
+13 Sep 2024; 15:31:53 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {dimensiLoco=300x200x200, tanggal=13/09/2024, namaLoco=Lokomotif 8, jam=15:31:53, kodeLoco=282dcc09-147f-4419-af6b-bf13fef19b0f, status=Available}
+13 Sep 2024; 15:31:53 PM c.e.locomotive.services.MongoService INFO: Fetching from MongoDB...
+13 Sep 2024; 15:31:53 PM c.e.locomotive.services.MongoService INFO: Locomotives Fetched Successfully
+13 Sep 2024; 15:31:53 PM o.s.s.s.TaskUtils$LoggingErrorHandler ERROR: Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.example.locomotive.models.LocomotiveStatus.getNonActive()" is null
+	at com.example.locomotive.services.MongoService.updateLocomotiveStatus(MongoService.java:100)
+	at com.example.locomotive.services.MongoService.fecthData(MongoService.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13 Sep 2024; 15:31:54 PM c.e.l.components.TelegramBotReport ERROR: Unable to deserialize response
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:132)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:32)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at com.example.locomotive.components.TelegramBotReport.sendTelegramMessage(TelegramBotReport.java:43)
+	at com.example.locomotive.components.TelegramBotReport.sendLatestSummary(TelegramBotReport.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61] (through reference chain: org.telegram.telegrambots.meta.api.objects.ApiResponse["result"]->org.telegram.telegrambots.meta.api.objects.Message["from"]->org.telegram.telegrambots.meta.api.objects.User["id"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:361)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1937)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:312)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3831)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:124)
+	... 18 common frames omitted
+Caused by: com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInputCoercion(ParserMinimalBase.java:562)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowInt(ParserMinimalBase.java:624)
+	at com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:1059)
+	at com.fasterxml.jackson.core.base.ParserBase._parseIntValue(ParserBase.java:983)
+	at com.fasterxml.jackson.core.base.ParserBase.getIntValue(ParserBase.java:789)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:526)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	... 30 common frames omitted
+13 Sep 2024; 15:32:03 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {dimensiLoco=300x200x200, tanggal=13/09/2024, namaLoco=Lokomotif 5, jam=15:32:03, kodeLoco=2d402104-0ebd-4b77-9519-6ff3317dc5dc, status=Maintenance}
+13 Sep 2024; 15:32:08 PM o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener INFO: Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+13 Sep 2024; 15:32:08 PM o.a.coyote.http11.Http11NioProtocol INFO: Stopping ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:32:08 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Closing JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:32:08 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-1 - Shutdown initiated...
+13 Sep 2024; 15:32:08 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-1 - Shutdown completed.
+13 Sep 2024; 15:32:08 PM c.e.locomotive.LocomotiveApplication INFO: Starting LocomotiveApplication using Java 21.0.1 with PID 19284 (E:\Kerja\Gap Analysis\IoT Locomotive\locomotive\target\classes started by Albiruni in E:\Kerja\Gap Analysis\IoT Locomotive\locomotive)
+13 Sep 2024; 15:32:08 PM c.e.locomotive.LocomotiveApplication INFO: No active profile set, falling back to 1 default profile: "default"
+13 Sep 2024; 15:32:08 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:32:08 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13 Sep 2024; 15:32:08 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+13 Sep 2024; 15:32:08 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:32:08 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+13 Sep 2024; 15:32:08 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveStatusRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:32:08 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveSummaryRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:32:08 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 3 ms. Found 1 MongoDB repository interface.
+13 Sep 2024; 15:32:08 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat initialized with port 8081 (http)
+13 Sep 2024; 15:32:08 PM o.a.coyote.http11.Http11NioProtocol INFO: Initializing ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:32:08 PM o.a.catalina.core.StandardService INFO: Starting service [Tomcat]
+13 Sep 2024; 15:32:08 PM o.a.catalina.core.StandardEngine INFO: Starting Servlet engine: [Apache Tomcat/10.1.28]
+13 Sep 2024; 15:32:08 PM o.a.c.c.C.[Tomcat].[localhost].[/] INFO: Initializing Spring embedded WebApplicationContext
+13 Sep 2024; 15:32:08 PM o.s.b.w.s.c.ServletWebServerApplicationContext INFO: Root WebApplicationContext: initialization completed in 188 ms
+13 Sep 2024; 15:32:08 PM o.h.jpa.internal.util.LogHelper INFO: HHH000204: Processing PersistenceUnitInfo [name: default]
+13 Sep 2024; 15:32:08 PM o.h.c.i.RegionFactoryInitiator INFO: HHH000026: Second-level cache disabled
+13 Sep 2024; 15:32:08 PM o.s.o.j.p.SpringPersistenceUnitInfo INFO: No LoadTimeWeaver setup: ignoring JPA class transformer
+13 Sep 2024; 15:32:08 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-2 - Starting...
+13 Sep 2024; 15:32:08 PM com.zaxxer.hikari.pool.HikariPool INFO: HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@71c4241a
+13 Sep 2024; 15:32:08 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-2 - Start completed.
+13 Sep 2024; 15:32:08 PM org.hibernate.orm.deprecation WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13 Sep 2024; 15:32:08 PM o.h.e.t.j.p.i.JtaPlatformInitiator INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13 Sep 2024; 15:32:08 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Initialized JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:32:08 PM org.mongodb.driver.client INFO: MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@945c884, com.mongodb.Jep395RecordCodecProvider@52ab3693, com.mongodb.KotlinCodecProvider@1ee0aee4]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+13 Sep 2024; 15:32:08 PM org.mongodb.driver.cluster INFO: Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1085800}
+13 Sep 2024; 15:32:08 PM o.s.b.d.a.OptionalLiveReloadServer INFO: LiveReload server is running on port 35729
+13 Sep 2024; 15:32:08 PM o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration WARN: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13 Sep 2024; 15:32:08 PM o.a.coyote.http11.Http11NioProtocol INFO: Starting ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:32:08 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat started on port 8081 (http) with context path '/'
+13 Sep 2024; 15:32:08 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {dimensiLoco=300x200x200, tanggal=13/09/2024, namaLoco=Lokomotif 6, jam=15:32:08, kodeLoco=8ff7dbbc-58aa-4d9e-a90a-66232b8c6757, status=Not Available}
+13 Sep 2024; 15:32:08 PM c.e.locomotive.LocomotiveApplication INFO: Started LocomotiveApplication in 0.485 seconds (process running for 18.887)
+13 Sep 2024; 15:32:08 PM o.s.b.d.a.ConditionEvaluationDeltaLoggingListener INFO: Condition evaluation unchanged
+13 Sep 2024; 15:32:08 PM c.e.locomotive.services.MongoService INFO: Fetching from MongoDB...
+13 Sep 2024; 15:32:08 PM c.e.locomotive.services.MongoService INFO: Locomotives Fetched Successfully
+13 Sep 2024; 15:32:08 PM o.s.s.s.TaskUtils$LoggingErrorHandler ERROR: Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.example.locomotive.models.LocomotiveStatus.getNonActive()" is null
+	at com.example.locomotive.services.MongoService.updateLocomotiveStatus(MongoService.java:100)
+	at com.example.locomotive.services.MongoService.fecthData(MongoService.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13 Sep 2024; 15:32:09 PM c.e.l.components.TelegramBotReport ERROR: Unable to deserialize response
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:132)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:32)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at com.example.locomotive.components.TelegramBotReport.sendTelegramMessage(TelegramBotReport.java:43)
+	at com.example.locomotive.components.TelegramBotReport.sendLatestSummary(TelegramBotReport.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61] (through reference chain: org.telegram.telegrambots.meta.api.objects.ApiResponse["result"]->org.telegram.telegrambots.meta.api.objects.Message["from"]->org.telegram.telegrambots.meta.api.objects.User["id"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:361)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1937)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:312)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3831)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:124)
+	... 18 common frames omitted
+Caused by: com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInputCoercion(ParserMinimalBase.java:562)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowInt(ParserMinimalBase.java:624)
+	at com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:1059)
+	at com.fasterxml.jackson.core.base.ParserBase._parseIntValue(ParserBase.java:983)
+	at com.fasterxml.jackson.core.base.ParserBase.getIntValue(ParserBase.java:789)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:526)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	... 30 common frames omitted
+13 Sep 2024; 15:32:18 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {dimensiLoco=500x400x300, tanggal=13/09/2024, namaLoco=Lokomotif 3, jam=15:32:18, kodeLoco=cbd29c56-d1bb-43de-857a-2a33021ffbf5, status=Available}
+13 Sep 2024; 15:32:28 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {dimensiLoco=600x500x300, tanggal=13/09/2024, namaLoco=Lokomotif 5, jam=15:32:28, kodeLoco=b8015e8c-61a1-42cc-85d6-a9e13b4f6548, status=Not Available}
+13 Sep 2024; 15:32:38 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {dimensiLoco=400x300x200, tanggal=13/09/2024, namaLoco=Lokomotif 3, jam=15:32:38, kodeLoco=b13a00c1-144f-4759-b6b4-998fdd6a7a04, status=Available}
+13 Sep 2024; 15:32:48 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {dimensiLoco=600x500x300, tanggal=13/09/2024, namaLoco=Lokomotif 10, jam=15:32:48, kodeLoco=87977a45-915e-4a49-ac0b-31ce8c13aa8c, status=Available}
+13 Sep 2024; 15:32:58 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {dimensiLoco=300x200x200, tanggal=13/09/2024, namaLoco=Lokomotif 3, jam=15:32:58, kodeLoco=868c7c13-8d90-4e46-a89e-e862db6cdd82, status=Available}
+13 Sep 2024; 15:33:08 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {dimensiLoco=500x400x300, tanggal=13/09/2024, namaLoco=Lokomotif 10, jam=15:33:08, kodeLoco=83a856b2-4c99-47c4-8427-6e886d14cf40, status=Not Available}
+13 Sep 2024; 15:33:08 PM c.e.locomotive.services.MongoService INFO: Fetching from MongoDB...
+13 Sep 2024; 15:33:08 PM c.e.locomotive.services.MongoService INFO: Locomotives Fetched Successfully
+13 Sep 2024; 15:33:08 PM o.s.s.s.TaskUtils$LoggingErrorHandler ERROR: Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.example.locomotive.models.LocomotiveStatus.getNonActive()" is null
+	at com.example.locomotive.services.MongoService.updateLocomotiveStatus(MongoService.java:100)
+	at com.example.locomotive.services.MongoService.fecthData(MongoService.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13 Sep 2024; 15:33:09 PM c.e.l.components.TelegramBotReport ERROR: Unable to deserialize response
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:132)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:32)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at com.example.locomotive.components.TelegramBotReport.sendTelegramMessage(TelegramBotReport.java:43)
+	at com.example.locomotive.components.TelegramBotReport.sendLatestSummary(TelegramBotReport.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61] (through reference chain: org.telegram.telegrambots.meta.api.objects.ApiResponse["result"]->org.telegram.telegrambots.meta.api.objects.Message["from"]->org.telegram.telegrambots.meta.api.objects.User["id"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:361)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1937)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:312)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3831)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:124)
+	... 18 common frames omitted
+Caused by: com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInputCoercion(ParserMinimalBase.java:562)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowInt(ParserMinimalBase.java:624)
+	at com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:1059)
+	at com.fasterxml.jackson.core.base.ParserBase._parseIntValue(ParserBase.java:983)
+	at com.fasterxml.jackson.core.base.ParserBase.getIntValue(ParserBase.java:789)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:526)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	... 30 common frames omitted
+13 Sep 2024; 15:33:18 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {dimensiLoco=600x500x300, tanggal=13/09/2024, namaLoco=Lokomotif 1, jam=15:33:18, kodeLoco=df0b1953-ad21-4492-8e18-8c0dcf0c3baa, status=Not Available}
+13 Sep 2024; 15:33:25 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Closing JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:33:25 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-2 - Shutdown initiated...
+13 Sep 2024; 15:33:25 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-2 - Shutdown completed.
+13 Sep 2024; 15:41:35 PM c.e.locomotive.LocomotiveApplication INFO: Starting LocomotiveApplication using Java 21.0.1 with PID 29664 (E:\Kerja\Gap Analysis\IoT Locomotive\locomotive\target\classes started by Albiruni in E:\Kerja\Gap Analysis\IoT Locomotive\locomotive)
+13 Sep 2024; 15:41:35 PM c.e.locomotive.LocomotiveApplication INFO: No active profile set, falling back to 1 default profile: "default"
+13 Sep 2024; 15:41:35 PM o.s.b.d.restart.ChangeableUrls INFO: The Class-Path manifest attribute in C:\Users\Albiruni\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+13 Sep 2024; 15:41:35 PM o.s.b.d.restart.ChangeableUrls INFO: The Class-Path manifest attribute in C:\Users\Albiruni\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/C:/Users/Albiruni/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+13 Sep 2024; 15:41:35 PM o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor INFO: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13 Sep 2024; 15:41:35 PM o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor INFO: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13 Sep 2024; 15:41:36 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:41:36 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13 Sep 2024; 15:41:36 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 35 ms. Found 3 JPA repository interfaces.
+13 Sep 2024; 15:41:36 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:41:36 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+13 Sep 2024; 15:41:36 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveStatusRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:41:36 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveSummaryRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:41:36 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 5 ms. Found 1 MongoDB repository interface.
+13 Sep 2024; 15:41:36 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat initialized with port 8081 (http)
+13 Sep 2024; 15:41:36 PM o.a.coyote.http11.Http11NioProtocol INFO: Initializing ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:41:36 PM o.a.catalina.core.StandardService INFO: Starting service [Tomcat]
+13 Sep 2024; 15:41:36 PM o.a.catalina.core.StandardEngine INFO: Starting Servlet engine: [Apache Tomcat/10.1.28]
+13 Sep 2024; 15:41:36 PM o.a.c.c.C.[Tomcat].[localhost].[/] INFO: Initializing Spring embedded WebApplicationContext
+13 Sep 2024; 15:41:36 PM o.s.b.w.s.c.ServletWebServerApplicationContext INFO: Root WebApplicationContext: initialization completed in 880 ms
+13 Sep 2024; 15:41:36 PM o.h.jpa.internal.util.LogHelper INFO: HHH000204: Processing PersistenceUnitInfo [name: default]
+13 Sep 2024; 15:41:36 PM org.hibernate.Version INFO: HHH000412: Hibernate ORM core version 6.5.2.Final
+13 Sep 2024; 15:41:36 PM o.h.c.i.RegionFactoryInitiator INFO: HHH000026: Second-level cache disabled
+13 Sep 2024; 15:41:36 PM o.s.o.j.p.SpringPersistenceUnitInfo INFO: No LoadTimeWeaver setup: ignoring JPA class transformer
+13 Sep 2024; 15:41:36 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-1 - Starting...
+13 Sep 2024; 15:41:37 PM com.zaxxer.hikari.pool.HikariPool INFO: HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cfb2a21
+13 Sep 2024; 15:41:37 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-1 - Start completed.
+13 Sep 2024; 15:41:37 PM org.hibernate.orm.deprecation WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13 Sep 2024; 15:41:37 PM o.h.e.t.j.p.i.JtaPlatformInitiator INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13 Sep 2024; 15:41:37 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Initialized JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:41:37 PM o.s.d.j.r.query.QueryEnhancerFactory INFO: Hibernate is in classpath; If applicable, HQL parser will be used.
+13 Sep 2024; 15:41:38 PM org.mongodb.driver.client INFO: MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@3903a466, com.mongodb.Jep395RecordCodecProvider@71b0184f, com.mongodb.KotlinCodecProvider@1db02467]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+13 Sep 2024; 15:41:38 PM org.mongodb.driver.cluster INFO: Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12301300}
+13 Sep 2024; 15:41:38 PM o.s.b.d.a.OptionalLiveReloadServer INFO: LiveReload server is running on port 35729
+13 Sep 2024; 15:41:38 PM o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration WARN: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13 Sep 2024; 15:41:38 PM o.a.coyote.http11.Http11NioProtocol INFO: Starting ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:41:38 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat started on port 8081 (http) with context path '/'
+13 Sep 2024; 15:41:38 PM c.e.locomotive.LocomotiveApplication INFO: Started LocomotiveApplication in 3.071 seconds (process running for 3.498)
+13 Sep 2024; 15:41:38 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {namaLoco=Lokomotif 1, tanggal=13/09/2024, dimensiLoco=300x200x200, status=Available, kodeLoco=e0fe3ce0-585a-4584-ad20-32daaf5febda, jam=15:41:38}
+13 Sep 2024; 15:41:38 PM c.e.locomotive.services.MongoService INFO: Fetching from MongoDB...
+13 Sep 2024; 15:41:38 PM c.e.locomotive.services.MongoService INFO: Locomotives Fetched Successfully
+13 Sep 2024; 15:41:38 PM o.s.s.s.TaskUtils$LoggingErrorHandler ERROR: Unexpected error occurred in scheduled task
+org.springframework.orm.jpa.JpaSystemException: Identifier of entity 'com.example.locomotive.models.LocomotiveStatus' must be manually assigned before calling 'persist()'
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:341)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy4/jdk.proxy4.$Proxy131.save(Unknown Source)
+	at com.example.locomotive.services.MongoService.updateLocomotiveStatus(MongoService.java:113)
+	at com.example.locomotive.services.MongoService.fecthData(MongoService.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.id.IdentifierGenerationException: Identifier of entity 'com.example.locomotive.models.LocomotiveStatus' must be manually assigned before calling 'persist()'
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:209)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy4/jdk.proxy4.$Proxy127.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:625)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:173)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:148)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 22 common frames omitted
+13 Sep 2024; 15:41:39 PM c.e.l.components.TelegramBotReport ERROR: Unable to deserialize response
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:132)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:32)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at com.example.locomotive.components.TelegramBotReport.sendTelegramMessage(TelegramBotReport.java:43)
+	at com.example.locomotive.components.TelegramBotReport.sendLatestSummary(TelegramBotReport.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61] (through reference chain: org.telegram.telegrambots.meta.api.objects.ApiResponse["result"]->org.telegram.telegrambots.meta.api.objects.Message["from"]->org.telegram.telegrambots.meta.api.objects.User["id"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:361)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1937)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:312)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3831)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:124)
+	... 18 common frames omitted
+Caused by: com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInputCoercion(ParserMinimalBase.java:562)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowInt(ParserMinimalBase.java:624)
+	at com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:1059)
+	at com.fasterxml.jackson.core.base.ParserBase._parseIntValue(ParserBase.java:983)
+	at com.fasterxml.jackson.core.base.ParserBase.getIntValue(ParserBase.java:789)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:526)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	... 30 common frames omitted
+13 Sep 2024; 15:41:48 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {namaLoco=Lokomotif 4, tanggal=13/09/2024, dimensiLoco=300x200x200, status=Not Available, kodeLoco=e234fece-6a7c-45cf-ad61-f982e4370d61, jam=15:41:48}
+13 Sep 2024; 15:41:58 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {namaLoco=Lokomotif 1, tanggal=13/09/2024, dimensiLoco=200x100x200, status=Available, kodeLoco=6c547d88-5098-46a5-993a-6bb8a61aa83e, jam=15:41:58}
+13 Sep 2024; 15:42:01 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Closing JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:42:01 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-1 - Shutdown initiated...
+13 Sep 2024; 15:42:01 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-1 - Shutdown completed.
+13 Sep 2024; 15:44:48 PM c.e.locomotive.LocomotiveApplication INFO: Starting LocomotiveApplication using Java 21.0.1 with PID 17916 (E:\Kerja\Gap Analysis\IoT Locomotive\locomotive\target\classes started by Albiruni in E:\Kerja\Gap Analysis\IoT Locomotive\locomotive)
+13 Sep 2024; 15:44:48 PM c.e.locomotive.LocomotiveApplication INFO: No active profile set, falling back to 1 default profile: "default"
+13 Sep 2024; 15:44:48 PM o.s.b.d.restart.ChangeableUrls INFO: The Class-Path manifest attribute in C:\Users\Albiruni\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/Albiruni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+13 Sep 2024; 15:44:48 PM o.s.b.d.restart.ChangeableUrls INFO: The Class-Path manifest attribute in C:\Users\Albiruni\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/C:/Users/Albiruni/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+13 Sep 2024; 15:44:48 PM o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor INFO: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13 Sep 2024; 15:44:48 PM o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor INFO: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13 Sep 2024; 15:44:48 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:44:48 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13 Sep 2024; 15:44:49 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+13 Sep 2024; 15:44:49 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:44:49 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+13 Sep 2024; 15:44:49 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveStatusRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:44:49 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveSummaryRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:44:49 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 5 ms. Found 1 MongoDB repository interface.
+13 Sep 2024; 15:44:49 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat initialized with port 8081 (http)
+13 Sep 2024; 15:44:49 PM o.a.coyote.http11.Http11NioProtocol INFO: Initializing ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:44:49 PM o.a.catalina.core.StandardService INFO: Starting service [Tomcat]
+13 Sep 2024; 15:44:49 PM o.a.catalina.core.StandardEngine INFO: Starting Servlet engine: [Apache Tomcat/10.1.28]
+13 Sep 2024; 15:44:49 PM o.a.c.c.C.[Tomcat].[localhost].[/] INFO: Initializing Spring embedded WebApplicationContext
+13 Sep 2024; 15:44:49 PM o.s.b.w.s.c.ServletWebServerApplicationContext INFO: Root WebApplicationContext: initialization completed in 912 ms
+13 Sep 2024; 15:44:49 PM o.h.jpa.internal.util.LogHelper INFO: HHH000204: Processing PersistenceUnitInfo [name: default]
+13 Sep 2024; 15:44:49 PM org.hibernate.Version INFO: HHH000412: Hibernate ORM core version 6.5.2.Final
+13 Sep 2024; 15:44:49 PM o.h.c.i.RegionFactoryInitiator INFO: HHH000026: Second-level cache disabled
+13 Sep 2024; 15:44:49 PM o.s.o.j.p.SpringPersistenceUnitInfo INFO: No LoadTimeWeaver setup: ignoring JPA class transformer
+13 Sep 2024; 15:44:49 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-1 - Starting...
+13 Sep 2024; 15:44:49 PM com.zaxxer.hikari.pool.HikariPool INFO: HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a93e8eb
+13 Sep 2024; 15:44:49 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-1 - Start completed.
+13 Sep 2024; 15:44:49 PM org.hibernate.orm.deprecation WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13 Sep 2024; 15:44:50 PM o.h.e.t.j.p.i.JtaPlatformInitiator INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13 Sep 2024; 15:44:50 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Initialized JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:44:50 PM o.s.d.j.r.query.QueryEnhancerFactory INFO: Hibernate is in classpath; If applicable, HQL parser will be used.
+13 Sep 2024; 15:44:51 PM org.mongodb.driver.client INFO: MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6c2d2151, com.mongodb.Jep395RecordCodecProvider@4f93b846, com.mongodb.KotlinCodecProvider@72d96711]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+13 Sep 2024; 15:44:51 PM org.mongodb.driver.cluster INFO: Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12898200}
+13 Sep 2024; 15:44:51 PM o.s.b.d.a.OptionalLiveReloadServer INFO: LiveReload server is running on port 35729
+13 Sep 2024; 15:44:51 PM o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration WARN: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13 Sep 2024; 15:44:51 PM o.a.coyote.http11.Http11NioProtocol INFO: Starting ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:44:51 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat started on port 8081 (http) with context path '/'
+13 Sep 2024; 15:44:51 PM c.e.locomotive.LocomotiveApplication INFO: Started LocomotiveApplication in 3.152 seconds (process running for 3.561)
+13 Sep 2024; 15:44:51 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=300x200x200, status=Maintenance, kodeLoco=ecddeb73-0538-4c1d-baf3-c9c45ef589d3, jam=15:44:51, namaLoco=Lokomotif 8}
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Fetching from MongoDB...
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Locomotives Fetched Successfully
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=759009d7-cac3-461a-8c57-8753b52436ce, namaLoco=Lokomotif 10, dimensiLoco=200x100x200, status=Not Available, tanggal=13/09/2024, jam=15:25:01)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=2a6b37dd-901e-4a9b-ab41-65929f361ac9, namaLoco=Lokomotif 3, dimensiLoco=600x500x300, status=Available, tanggal=13/09/2024, jam=15:25:11)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=d07b3dad-4112-4bdf-8779-5533af38d103, namaLoco=Lokomotif 6, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:25:21)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=5419350e-d8df-4b66-92d2-29db41d1322e, namaLoco=Lokomotif 9, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:25:31)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=959c1688-fa91-4c7b-b72c-dfc11fb791e6, namaLoco=Lokomotif 5, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:25:41)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=129cae05-2fe5-456d-bfbf-b813d8140027, namaLoco=Lokomotif 8, dimensiLoco=300x200x200, status=Available, tanggal=13/09/2024, jam=15:25:51)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=96c0a3e4-b07f-491b-8805-27defc134e69, namaLoco=Lokomotif 6, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:27:05)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=ff263b78-bac4-4613-b88d-b7185d25469e, namaLoco=Lokomotif 9, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:27:10)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=7a8794cc-9a33-4bed-aa21-64f3c47ef97b, namaLoco=Lokomotif 5, dimensiLoco=500x400x300, status=Maintenance, tanggal=13/09/2024, jam=15:27:20)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=7c278c76-4745-4eea-aaed-16ee2ec2bbc1, namaLoco=Lokomotif 7, dimensiLoco=500x400x300, status=Not Available, tanggal=13/09/2024, jam=15:27:30)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=1c1ccba6-9a5f-4e83-9613-975e6ee4e93a, namaLoco=Lokomotif 1, dimensiLoco=300x200x200, status=Not Available, tanggal=13/09/2024, jam=15:27:40)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=282dcc09-147f-4419-af6b-bf13fef19b0f, namaLoco=Lokomotif 8, dimensiLoco=300x200x200, status=Available, tanggal=13/09/2024, jam=15:31:53)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=2d402104-0ebd-4b77-9519-6ff3317dc5dc, namaLoco=Lokomotif 5, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:32:03)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=8ff7dbbc-58aa-4d9e-a90a-66232b8c6757, namaLoco=Lokomotif 6, dimensiLoco=300x200x200, status=Not Available, tanggal=13/09/2024, jam=15:32:08)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=cbd29c56-d1bb-43de-857a-2a33021ffbf5, namaLoco=Lokomotif 3, dimensiLoco=500x400x300, status=Available, tanggal=13/09/2024, jam=15:32:18)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=b8015e8c-61a1-42cc-85d6-a9e13b4f6548, namaLoco=Lokomotif 5, dimensiLoco=600x500x300, status=Not Available, tanggal=13/09/2024, jam=15:32:28)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=b13a00c1-144f-4759-b6b4-998fdd6a7a04, namaLoco=Lokomotif 3, dimensiLoco=400x300x200, status=Available, tanggal=13/09/2024, jam=15:32:38)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=87977a45-915e-4a49-ac0b-31ce8c13aa8c, namaLoco=Lokomotif 10, dimensiLoco=600x500x300, status=Available, tanggal=13/09/2024, jam=15:32:48)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=868c7c13-8d90-4e46-a89e-e862db6cdd82, namaLoco=Lokomotif 3, dimensiLoco=300x200x200, status=Available, tanggal=13/09/2024, jam=15:32:58)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=83a856b2-4c99-47c4-8427-6e886d14cf40, namaLoco=Lokomotif 10, dimensiLoco=500x400x300, status=Not Available, tanggal=13/09/2024, jam=15:33:08)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=df0b1953-ad21-4492-8e18-8c0dcf0c3baa, namaLoco=Lokomotif 1, dimensiLoco=600x500x300, status=Not Available, tanggal=13/09/2024, jam=15:33:18)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=e0fe3ce0-585a-4584-ad20-32daaf5febda, namaLoco=Lokomotif 1, dimensiLoco=300x200x200, status=Available, tanggal=13/09/2024, jam=15:41:38)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=e234fece-6a7c-45cf-ad61-f982e4370d61, namaLoco=Lokomotif 4, dimensiLoco=300x200x200, status=Not Available, tanggal=13/09/2024, jam=15:41:48)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=6c547d88-5098-46a5-993a-6bb8a61aa83e, namaLoco=Lokomotif 1, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:41:58)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=ecddeb73-0538-4c1d-baf3-c9c45ef589d3, namaLoco=Lokomotif 8, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:44:51)
+13 Sep 2024; 15:44:51 PM c.e.locomotive.services.MongoService INFO: Saved Summary into PostgreSQL: LocomotiveSummary(id=876b1e71-88a7-4cb0-975d-908184cac7e8, active=13, nonActive=8, maintenance=4, totalLocomotive=25, updatedAt=2024-09-13T15:44:51.812318800)
+13 Sep 2024; 15:44:52 PM c.e.l.components.TelegramBotReport ERROR: Unable to deserialize response
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:132)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:32)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at com.example.locomotive.components.TelegramBotReport.sendTelegramMessage(TelegramBotReport.java:43)
+	at com.example.locomotive.components.TelegramBotReport.sendLatestSummary(TelegramBotReport.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61] (through reference chain: org.telegram.telegrambots.meta.api.objects.ApiResponse["result"]->org.telegram.telegrambots.meta.api.objects.Message["from"]->org.telegram.telegrambots.meta.api.objects.User["id"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:361)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1937)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:312)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3831)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:124)
+	... 18 common frames omitted
+Caused by: com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInputCoercion(ParserMinimalBase.java:562)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowInt(ParserMinimalBase.java:624)
+	at com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:1059)
+	at com.fasterxml.jackson.core.base.ParserBase._parseIntValue(ParserBase.java:983)
+	at com.fasterxml.jackson.core.base.ParserBase.getIntValue(ParserBase.java:789)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:526)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	... 30 common frames omitted
+13 Sep 2024; 15:45:01 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=300x200x200, status=Maintenance, kodeLoco=eadaf79f-d8ea-4b1f-b002-94477a4333ac, jam=15:45:01, namaLoco=Lokomotif 3}
+13 Sep 2024; 15:45:11 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=300x200x200, status=Maintenance, kodeLoco=f483c7b3-35ce-42d7-96d3-af8475da81a1, jam=15:45:11, namaLoco=Lokomotif 5}
+13 Sep 2024; 15:45:21 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=400x300x200, status=Maintenance, kodeLoco=94b59f2c-0923-4d6f-826a-ee43b9092cd6, jam=15:45:21, namaLoco=Lokomotif 1}
+13 Sep 2024; 15:45:31 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=300x200x200, status=Not Available, kodeLoco=1be0af2f-6dd2-4d66-b20c-cc0e49ab955d, jam=15:45:31, namaLoco=Lokomotif 5}
+13 Sep 2024; 15:45:41 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=200x100x200, status=Maintenance, kodeLoco=bc4d0ae7-35d0-48aa-a83a-deb117c170ed, jam=15:45:41, namaLoco=Lokomotif 10}
+13 Sep 2024; 15:45:51 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=400x300x200, status=Not Available, kodeLoco=71ab07b6-5101-4391-ad26-3e0d98a120fb, jam=15:45:51, namaLoco=Lokomotif 4}
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Fetching from MongoDB...
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Locomotives Fetched Successfully
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=759009d7-cac3-461a-8c57-8753b52436ce, namaLoco=Lokomotif 10, dimensiLoco=200x100x200, status=Not Available, tanggal=13/09/2024, jam=15:25:01)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=2a6b37dd-901e-4a9b-ab41-65929f361ac9, namaLoco=Lokomotif 3, dimensiLoco=600x500x300, status=Available, tanggal=13/09/2024, jam=15:25:11)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=d07b3dad-4112-4bdf-8779-5533af38d103, namaLoco=Lokomotif 6, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:25:21)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=5419350e-d8df-4b66-92d2-29db41d1322e, namaLoco=Lokomotif 9, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:25:31)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=959c1688-fa91-4c7b-b72c-dfc11fb791e6, namaLoco=Lokomotif 5, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:25:41)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=129cae05-2fe5-456d-bfbf-b813d8140027, namaLoco=Lokomotif 8, dimensiLoco=300x200x200, status=Available, tanggal=13/09/2024, jam=15:25:51)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=96c0a3e4-b07f-491b-8805-27defc134e69, namaLoco=Lokomotif 6, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:27:05)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=ff263b78-bac4-4613-b88d-b7185d25469e, namaLoco=Lokomotif 9, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:27:10)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=7a8794cc-9a33-4bed-aa21-64f3c47ef97b, namaLoco=Lokomotif 5, dimensiLoco=500x400x300, status=Maintenance, tanggal=13/09/2024, jam=15:27:20)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=7c278c76-4745-4eea-aaed-16ee2ec2bbc1, namaLoco=Lokomotif 7, dimensiLoco=500x400x300, status=Not Available, tanggal=13/09/2024, jam=15:27:30)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=1c1ccba6-9a5f-4e83-9613-975e6ee4e93a, namaLoco=Lokomotif 1, dimensiLoco=300x200x200, status=Not Available, tanggal=13/09/2024, jam=15:27:40)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=282dcc09-147f-4419-af6b-bf13fef19b0f, namaLoco=Lokomotif 8, dimensiLoco=300x200x200, status=Available, tanggal=13/09/2024, jam=15:31:53)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=2d402104-0ebd-4b77-9519-6ff3317dc5dc, namaLoco=Lokomotif 5, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:32:03)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=8ff7dbbc-58aa-4d9e-a90a-66232b8c6757, namaLoco=Lokomotif 6, dimensiLoco=300x200x200, status=Not Available, tanggal=13/09/2024, jam=15:32:08)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=cbd29c56-d1bb-43de-857a-2a33021ffbf5, namaLoco=Lokomotif 3, dimensiLoco=500x400x300, status=Available, tanggal=13/09/2024, jam=15:32:18)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=b8015e8c-61a1-42cc-85d6-a9e13b4f6548, namaLoco=Lokomotif 5, dimensiLoco=600x500x300, status=Not Available, tanggal=13/09/2024, jam=15:32:28)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=b13a00c1-144f-4759-b6b4-998fdd6a7a04, namaLoco=Lokomotif 3, dimensiLoco=400x300x200, status=Available, tanggal=13/09/2024, jam=15:32:38)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=87977a45-915e-4a49-ac0b-31ce8c13aa8c, namaLoco=Lokomotif 10, dimensiLoco=600x500x300, status=Available, tanggal=13/09/2024, jam=15:32:48)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=868c7c13-8d90-4e46-a89e-e862db6cdd82, namaLoco=Lokomotif 3, dimensiLoco=300x200x200, status=Available, tanggal=13/09/2024, jam=15:32:58)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=83a856b2-4c99-47c4-8427-6e886d14cf40, namaLoco=Lokomotif 10, dimensiLoco=500x400x300, status=Not Available, tanggal=13/09/2024, jam=15:33:08)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=df0b1953-ad21-4492-8e18-8c0dcf0c3baa, namaLoco=Lokomotif 1, dimensiLoco=600x500x300, status=Not Available, tanggal=13/09/2024, jam=15:33:18)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=e0fe3ce0-585a-4584-ad20-32daaf5febda, namaLoco=Lokomotif 1, dimensiLoco=300x200x200, status=Available, tanggal=13/09/2024, jam=15:41:38)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=e234fece-6a7c-45cf-ad61-f982e4370d61, namaLoco=Lokomotif 4, dimensiLoco=300x200x200, status=Not Available, tanggal=13/09/2024, jam=15:41:48)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=6c547d88-5098-46a5-993a-6bb8a61aa83e, namaLoco=Lokomotif 1, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:41:58)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=ecddeb73-0538-4c1d-baf3-c9c45ef589d3, namaLoco=Lokomotif 8, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:44:51)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=eadaf79f-d8ea-4b1f-b002-94477a4333ac, namaLoco=Lokomotif 3, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:45:01)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=f483c7b3-35ce-42d7-96d3-af8475da81a1, namaLoco=Lokomotif 5, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:45:11)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=94b59f2c-0923-4d6f-826a-ee43b9092cd6, namaLoco=Lokomotif 1, dimensiLoco=400x300x200, status=Maintenance, tanggal=13/09/2024, jam=15:45:21)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=1be0af2f-6dd2-4d66-b20c-cc0e49ab955d, namaLoco=Lokomotif 5, dimensiLoco=300x200x200, status=Not Available, tanggal=13/09/2024, jam=15:45:31)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=bc4d0ae7-35d0-48aa-a83a-deb117c170ed, namaLoco=Lokomotif 10, dimensiLoco=200x100x200, status=Maintenance, tanggal=13/09/2024, jam=15:45:41)
+13 Sep 2024; 15:45:51 PM c.e.locomotive.services.MongoService INFO: Saved Summary into PostgreSQL: LocomotiveSummary(id=a641aa9d-bdf9-4e03-bfe5-f4bba904416e, active=13, nonActive=9, maintenance=8, totalLocomotive=30, updatedAt=2024-09-13T15:45:51.617235300)
+13 Sep 2024; 15:45:52 PM c.e.l.components.TelegramBotReport ERROR: Unable to deserialize response
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:132)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:32)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at com.example.locomotive.components.TelegramBotReport.sendTelegramMessage(TelegramBotReport.java:43)
+	at com.example.locomotive.components.TelegramBotReport.sendLatestSummary(TelegramBotReport.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61] (through reference chain: org.telegram.telegrambots.meta.api.objects.ApiResponse["result"]->org.telegram.telegrambots.meta.api.objects.Message["from"]->org.telegram.telegrambots.meta.api.objects.User["id"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:361)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1937)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:312)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3831)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:124)
+	... 18 common frames omitted
+Caused by: com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInputCoercion(ParserMinimalBase.java:562)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowInt(ParserMinimalBase.java:624)
+	at com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:1059)
+	at com.fasterxml.jackson.core.base.ParserBase._parseIntValue(ParserBase.java:983)
+	at com.fasterxml.jackson.core.base.ParserBase.getIntValue(ParserBase.java:789)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:526)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	... 30 common frames omitted
+13 Sep 2024; 15:46:01 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=400x300x200, status=Maintenance, kodeLoco=b04c187f-c40f-4664-ab2e-bb9939b2cf3c, jam=15:46:01, namaLoco=Lokomotif 10}
+13 Sep 2024; 15:46:11 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=600x500x300, status=Available, kodeLoco=1c74e2d9-e1e3-4f98-b7a9-00436eee24f8, jam=15:46:11, namaLoco=Lokomotif 6}
+13 Sep 2024; 15:46:21 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=500x400x300, status=Not Available, kodeLoco=87cf4ef4-bdd8-42fb-be5e-c59308b0911c, jam=15:46:21, namaLoco=Lokomotif 4}
+13 Sep 2024; 15:46:31 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=600x500x300, status=Available, kodeLoco=30bccf6e-c90c-40da-bc52-0c3cb0b31943, jam=15:46:31, namaLoco=Lokomotif 8}
+13 Sep 2024; 15:46:41 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=300x200x200, status=Maintenance, kodeLoco=d8cb7105-cb0b-45ff-980d-dbbac7ec7700, jam=15:46:41, namaLoco=Lokomotif 5}
+13 Sep 2024; 15:46:51 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=500x400x300, status=Maintenance, kodeLoco=5f5b090b-aa2d-4115-93a9-f123be6e945a, jam=15:46:51, namaLoco=Lokomotif 3}
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Fetching from MongoDB...
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Locomotives Fetched Successfully
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=759009d7-cac3-461a-8c57-8753b52436ce, namaLoco=Lokomotif 10, dimensiLoco=200x100x200, status=Not Available, tanggal=13/09/2024, jam=15:25:01)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=2a6b37dd-901e-4a9b-ab41-65929f361ac9, namaLoco=Lokomotif 3, dimensiLoco=600x500x300, status=Available, tanggal=13/09/2024, jam=15:25:11)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=d07b3dad-4112-4bdf-8779-5533af38d103, namaLoco=Lokomotif 6, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:25:21)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=5419350e-d8df-4b66-92d2-29db41d1322e, namaLoco=Lokomotif 9, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:25:31)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=959c1688-fa91-4c7b-b72c-dfc11fb791e6, namaLoco=Lokomotif 5, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:25:41)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=129cae05-2fe5-456d-bfbf-b813d8140027, namaLoco=Lokomotif 8, dimensiLoco=300x200x200, status=Available, tanggal=13/09/2024, jam=15:25:51)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=96c0a3e4-b07f-491b-8805-27defc134e69, namaLoco=Lokomotif 6, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:27:05)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=ff263b78-bac4-4613-b88d-b7185d25469e, namaLoco=Lokomotif 9, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:27:10)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=7a8794cc-9a33-4bed-aa21-64f3c47ef97b, namaLoco=Lokomotif 5, dimensiLoco=500x400x300, status=Maintenance, tanggal=13/09/2024, jam=15:27:20)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=7c278c76-4745-4eea-aaed-16ee2ec2bbc1, namaLoco=Lokomotif 7, dimensiLoco=500x400x300, status=Not Available, tanggal=13/09/2024, jam=15:27:30)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=1c1ccba6-9a5f-4e83-9613-975e6ee4e93a, namaLoco=Lokomotif 1, dimensiLoco=300x200x200, status=Not Available, tanggal=13/09/2024, jam=15:27:40)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=282dcc09-147f-4419-af6b-bf13fef19b0f, namaLoco=Lokomotif 8, dimensiLoco=300x200x200, status=Available, tanggal=13/09/2024, jam=15:31:53)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=2d402104-0ebd-4b77-9519-6ff3317dc5dc, namaLoco=Lokomotif 5, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:32:03)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=8ff7dbbc-58aa-4d9e-a90a-66232b8c6757, namaLoco=Lokomotif 6, dimensiLoco=300x200x200, status=Not Available, tanggal=13/09/2024, jam=15:32:08)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=cbd29c56-d1bb-43de-857a-2a33021ffbf5, namaLoco=Lokomotif 3, dimensiLoco=500x400x300, status=Available, tanggal=13/09/2024, jam=15:32:18)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=b8015e8c-61a1-42cc-85d6-a9e13b4f6548, namaLoco=Lokomotif 5, dimensiLoco=600x500x300, status=Not Available, tanggal=13/09/2024, jam=15:32:28)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=b13a00c1-144f-4759-b6b4-998fdd6a7a04, namaLoco=Lokomotif 3, dimensiLoco=400x300x200, status=Available, tanggal=13/09/2024, jam=15:32:38)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=87977a45-915e-4a49-ac0b-31ce8c13aa8c, namaLoco=Lokomotif 10, dimensiLoco=600x500x300, status=Available, tanggal=13/09/2024, jam=15:32:48)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=868c7c13-8d90-4e46-a89e-e862db6cdd82, namaLoco=Lokomotif 3, dimensiLoco=300x200x200, status=Available, tanggal=13/09/2024, jam=15:32:58)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=83a856b2-4c99-47c4-8427-6e886d14cf40, namaLoco=Lokomotif 10, dimensiLoco=500x400x300, status=Not Available, tanggal=13/09/2024, jam=15:33:08)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=df0b1953-ad21-4492-8e18-8c0dcf0c3baa, namaLoco=Lokomotif 1, dimensiLoco=600x500x300, status=Not Available, tanggal=13/09/2024, jam=15:33:18)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=e0fe3ce0-585a-4584-ad20-32daaf5febda, namaLoco=Lokomotif 1, dimensiLoco=300x200x200, status=Available, tanggal=13/09/2024, jam=15:41:38)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=e234fece-6a7c-45cf-ad61-f982e4370d61, namaLoco=Lokomotif 4, dimensiLoco=300x200x200, status=Not Available, tanggal=13/09/2024, jam=15:41:48)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=6c547d88-5098-46a5-993a-6bb8a61aa83e, namaLoco=Lokomotif 1, dimensiLoco=200x100x200, status=Available, tanggal=13/09/2024, jam=15:41:58)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=ecddeb73-0538-4c1d-baf3-c9c45ef589d3, namaLoco=Lokomotif 8, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:44:51)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=eadaf79f-d8ea-4b1f-b002-94477a4333ac, namaLoco=Lokomotif 3, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:45:01)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=f483c7b3-35ce-42d7-96d3-af8475da81a1, namaLoco=Lokomotif 5, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:45:11)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=94b59f2c-0923-4d6f-826a-ee43b9092cd6, namaLoco=Lokomotif 1, dimensiLoco=400x300x200, status=Maintenance, tanggal=13/09/2024, jam=15:45:21)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=1be0af2f-6dd2-4d66-b20c-cc0e49ab955d, namaLoco=Lokomotif 5, dimensiLoco=300x200x200, status=Not Available, tanggal=13/09/2024, jam=15:45:31)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=bc4d0ae7-35d0-48aa-a83a-deb117c170ed, namaLoco=Lokomotif 10, dimensiLoco=200x100x200, status=Maintenance, tanggal=13/09/2024, jam=15:45:41)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=71ab07b6-5101-4391-ad26-3e0d98a120fb, namaLoco=Lokomotif 4, dimensiLoco=400x300x200, status=Not Available, tanggal=13/09/2024, jam=15:45:51)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=b04c187f-c40f-4664-ab2e-bb9939b2cf3c, namaLoco=Lokomotif 10, dimensiLoco=400x300x200, status=Maintenance, tanggal=13/09/2024, jam=15:46:01)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=1c74e2d9-e1e3-4f98-b7a9-00436eee24f8, namaLoco=Lokomotif 6, dimensiLoco=600x500x300, status=Available, tanggal=13/09/2024, jam=15:46:11)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=87cf4ef4-bdd8-42fb-be5e-c59308b0911c, namaLoco=Lokomotif 4, dimensiLoco=500x400x300, status=Not Available, tanggal=13/09/2024, jam=15:46:21)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=30bccf6e-c90c-40da-bc52-0c3cb0b31943, namaLoco=Lokomotif 8, dimensiLoco=600x500x300, status=Available, tanggal=13/09/2024, jam=15:46:31)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=d8cb7105-cb0b-45ff-980d-dbbac7ec7700, namaLoco=Lokomotif 5, dimensiLoco=300x200x200, status=Maintenance, tanggal=13/09/2024, jam=15:46:41)
+13 Sep 2024; 15:46:51 PM c.e.locomotive.services.MongoService INFO: Saved Summary into PostgreSQL: LocomotiveSummary(id=7a58bbee-b857-4396-b1ef-513e49fef60d, active=15, nonActive=11, maintenance=10, totalLocomotive=36, updatedAt=2024-09-13T15:46:51.642285600)
+13 Sep 2024; 15:46:52 PM c.e.l.components.TelegramBotReport ERROR: Unable to deserialize response
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:132)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:32)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at com.example.locomotive.components.TelegramBotReport.sendTelegramMessage(TelegramBotReport.java:43)
+	at com.example.locomotive.components.TelegramBotReport.sendLatestSummary(TelegramBotReport.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61] (through reference chain: org.telegram.telegrambots.meta.api.objects.ApiResponse["result"]->org.telegram.telegrambots.meta.api.objects.Message["from"]->org.telegram.telegrambots.meta.api.objects.User["id"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:361)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1937)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:312)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3831)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:124)
+	... 18 common frames omitted
+Caused by: com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInputCoercion(ParserMinimalBase.java:562)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowInt(ParserMinimalBase.java:624)
+	at com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:1059)
+	at com.fasterxml.jackson.core.base.ParserBase._parseIntValue(ParserBase.java:983)
+	at com.fasterxml.jackson.core.base.ParserBase.getIntValue(ParserBase.java:789)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:526)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	... 30 common frames omitted
+13 Sep 2024; 15:46:59 PM o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener INFO: Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+13 Sep 2024; 15:46:59 PM o.a.coyote.http11.Http11NioProtocol INFO: Stopping ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:46:59 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Closing JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:46:59 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-1 - Shutdown initiated...
+13 Sep 2024; 15:46:59 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-1 - Shutdown completed.
+13 Sep 2024; 15:46:59 PM c.e.locomotive.LocomotiveApplication INFO: Starting LocomotiveApplication using Java 21.0.1 with PID 17916 (E:\Kerja\Gap Analysis\IoT Locomotive\locomotive\target\classes started by Albiruni in E:\Kerja\Gap Analysis\IoT Locomotive\locomotive)
+13 Sep 2024; 15:46:59 PM c.e.locomotive.LocomotiveApplication INFO: No active profile set, falling back to 1 default profile: "default"
+13 Sep 2024; 15:46:59 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:46:59 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13 Sep 2024; 15:46:59 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+13 Sep 2024; 15:46:59 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Multiple Spring Data modules found, entering strict repository configuration mode
+13 Sep 2024; 15:46:59 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+13 Sep 2024; 15:46:59 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveStatusRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:46:59 PM o.s.d.r.c.RepositoryConfigurationExtensionSupport INFO: Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.example.locomotive.repositories.LocomotiveSummaryRepo; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+13 Sep 2024; 15:46:59 PM o.s.d.r.c.RepositoryConfigurationDelegate INFO: Finished Spring Data repository scanning in 2 ms. Found 1 MongoDB repository interface.
+13 Sep 2024; 15:46:59 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat initialized with port 8081 (http)
+13 Sep 2024; 15:46:59 PM o.a.coyote.http11.Http11NioProtocol INFO: Initializing ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:46:59 PM o.a.catalina.core.StandardService INFO: Starting service [Tomcat]
+13 Sep 2024; 15:46:59 PM o.a.catalina.core.StandardEngine INFO: Starting Servlet engine: [Apache Tomcat/10.1.28]
+13 Sep 2024; 15:46:59 PM o.a.c.c.C.[Tomcat].[localhost].[/] INFO: Initializing Spring embedded WebApplicationContext
+13 Sep 2024; 15:46:59 PM o.s.b.w.s.c.ServletWebServerApplicationContext INFO: Root WebApplicationContext: initialization completed in 178 ms
+13 Sep 2024; 15:46:59 PM o.h.jpa.internal.util.LogHelper INFO: HHH000204: Processing PersistenceUnitInfo [name: default]
+13 Sep 2024; 15:46:59 PM o.h.c.i.RegionFactoryInitiator INFO: HHH000026: Second-level cache disabled
+13 Sep 2024; 15:46:59 PM o.s.o.j.p.SpringPersistenceUnitInfo INFO: No LoadTimeWeaver setup: ignoring JPA class transformer
+13 Sep 2024; 15:46:59 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-2 - Starting...
+13 Sep 2024; 15:46:59 PM com.zaxxer.hikari.pool.HikariPool INFO: HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@7ee968bc
+13 Sep 2024; 15:46:59 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-2 - Start completed.
+13 Sep 2024; 15:46:59 PM org.hibernate.orm.deprecation WARN: HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13 Sep 2024; 15:46:59 PM o.h.e.t.j.p.i.JtaPlatformInitiator INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13 Sep 2024; 15:46:59 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Initialized JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:46:59 PM org.mongodb.driver.client INFO: MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-LTS-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6c2d2151, com.mongodb.Jep395RecordCodecProvider@4f93b846, com.mongodb.KotlinCodecProvider@72d96711]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+13 Sep 2024; 15:46:59 PM org.mongodb.driver.cluster INFO: Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=946700}
+13 Sep 2024; 15:46:59 PM o.s.b.d.a.OptionalLiveReloadServer INFO: LiveReload server is running on port 35729
+13 Sep 2024; 15:46:59 PM o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration WARN: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13 Sep 2024; 15:47:00 PM o.a.coyote.http11.Http11NioProtocol INFO: Starting ProtocolHandler ["http-nio-8081"]
+13 Sep 2024; 15:47:00 PM o.s.b.w.e.tomcat.TomcatWebServer INFO: Tomcat started on port 8081 (http) with context path '/'
+13 Sep 2024; 15:47:00 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=500x400x300, status=Maintenance, kodeLoco=e5b30373-8ecf-4cd6-a6f0-5058ae13f258, jam=15:47:00, namaLoco=Lokomotif 2}
+13 Sep 2024; 15:47:00 PM c.e.locomotive.LocomotiveApplication INFO: Started LocomotiveApplication in 0.48 seconds (process running for 132.111)
+13 Sep 2024; 15:47:00 PM o.s.b.d.a.ConditionEvaluationDeltaLoggingListener INFO: Condition evaluation unchanged
+13 Sep 2024; 15:47:00 PM c.e.locomotive.services.MongoService INFO: Fetching from MongoDB...
+13 Sep 2024; 15:47:00 PM c.e.locomotive.services.MongoService INFO: Locomotives Fetched Successfully
+13 Sep 2024; 15:47:00 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=759009d7-cac3-461a-8c57-8753b52436ce, namaLoco=Lokomotif 10, dimensiLoco=200x100x200, status=Not Available, tanggal=13/09/2024, jam=15:25:01)
+13 Sep 2024; 15:47:00 PM o.s.s.s.TaskUtils$LoggingErrorHandler ERROR: Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.example.locomotive.models.LocomotiveStatus.getNonActive()" is null
+	at com.example.locomotive.services.MongoService.updateLocomotiveStatus(MongoService.java:114)
+	at com.example.locomotive.services.MongoService.fecthData(MongoService.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13 Sep 2024; 15:47:00 PM c.e.l.components.TelegramBotReport ERROR: Unable to deserialize response
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:132)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:32)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at com.example.locomotive.components.TelegramBotReport.sendTelegramMessage(TelegramBotReport.java:43)
+	at com.example.locomotive.components.TelegramBotReport.sendLatestSummary(TelegramBotReport.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61] (through reference chain: org.telegram.telegrambots.meta.api.objects.ApiResponse["result"]->org.telegram.telegrambots.meta.api.objects.Message["from"]->org.telegram.telegrambots.meta.api.objects.User["id"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:361)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1937)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:312)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3831)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:124)
+	... 18 common frames omitted
+Caused by: com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInputCoercion(ParserMinimalBase.java:562)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowInt(ParserMinimalBase.java:624)
+	at com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:1059)
+	at com.fasterxml.jackson.core.base.ParserBase._parseIntValue(ParserBase.java:983)
+	at com.fasterxml.jackson.core.base.ParserBase.getIntValue(ParserBase.java:789)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:526)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	... 30 common frames omitted
+13 Sep 2024; 15:47:10 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=300x200x200, status=Maintenance, kodeLoco=5dd2366d-5351-460d-ab47-f7a0785bc001, jam=15:47:10, namaLoco=Lokomotif 9}
+13 Sep 2024; 15:47:20 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=500x400x300, status=Not Available, kodeLoco=e02ee0ab-a5ad-405e-ad6f-9369891abbf6, jam=15:47:20, namaLoco=Lokomotif 9}
+13 Sep 2024; 15:47:30 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=500x400x300, status=Available, kodeLoco=21b017d4-7c42-4a8b-8dd0-06cbe167322f, jam=15:47:30, namaLoco=Lokomotif 10}
+13 Sep 2024; 15:47:40 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=200x100x200, status=Available, kodeLoco=733d785d-a4d3-40f3-b290-7c632195d09b, jam=15:47:40, namaLoco=Lokomotif 1}
+13 Sep 2024; 15:47:50 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=500x400x300, status=Available, kodeLoco=de4ffd4a-1a0f-4061-8098-b033c3d96a28, jam=15:47:50, namaLoco=Lokomotif 6}
+13 Sep 2024; 15:48:00 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=500x400x300, status=Not Available, kodeLoco=0411285d-d80d-4edc-9668-edb6bf5d1ba1, jam=15:48:00, namaLoco=Lokomotif 5}
+13 Sep 2024; 15:48:00 PM c.e.locomotive.services.MongoService INFO: Fetching from MongoDB...
+13 Sep 2024; 15:48:00 PM c.e.locomotive.services.MongoService INFO: Locomotives Fetched Successfully
+13 Sep 2024; 15:48:00 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=759009d7-cac3-461a-8c57-8753b52436ce, namaLoco=Lokomotif 10, dimensiLoco=200x100x200, status=Not Available, tanggal=13/09/2024, jam=15:25:01)
+13 Sep 2024; 15:48:00 PM o.s.s.s.TaskUtils$LoggingErrorHandler ERROR: Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.example.locomotive.models.LocomotiveStatus.getNonActive()" is null
+	at com.example.locomotive.services.MongoService.updateLocomotiveStatus(MongoService.java:114)
+	at com.example.locomotive.services.MongoService.fecthData(MongoService.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13 Sep 2024; 15:48:00 PM c.e.l.components.TelegramBotReport ERROR: Unable to deserialize response
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:132)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:32)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at com.example.locomotive.components.TelegramBotReport.sendTelegramMessage(TelegramBotReport.java:43)
+	at com.example.locomotive.components.TelegramBotReport.sendLatestSummary(TelegramBotReport.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61] (through reference chain: org.telegram.telegrambots.meta.api.objects.ApiResponse["result"]->org.telegram.telegrambots.meta.api.objects.Message["from"]->org.telegram.telegrambots.meta.api.objects.User["id"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:361)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1937)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:312)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3831)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:124)
+	... 18 common frames omitted
+Caused by: com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInputCoercion(ParserMinimalBase.java:562)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowInt(ParserMinimalBase.java:624)
+	at com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:1059)
+	at com.fasterxml.jackson.core.base.ParserBase._parseIntValue(ParserBase.java:983)
+	at com.fasterxml.jackson.core.base.ParserBase.getIntValue(ParserBase.java:789)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:526)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	... 30 common frames omitted
+13 Sep 2024; 15:48:10 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=200x100x200, status=Not Available, kodeLoco=e5f493a4-794d-43e8-bfd1-483247f77c3c, jam=15:48:10, namaLoco=Lokomotif 5}
+13 Sep 2024; 15:48:20 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=300x200x200, status=Maintenance, kodeLoco=52bf82c3-9875-452c-bdbc-949a30f48a46, jam=15:48:20, namaLoco=Lokomotif 7}
+13 Sep 2024; 15:48:30 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=600x500x300, status=Available, kodeLoco=d183b4d1-6413-424d-82a1-33f4ce922459, jam=15:48:30, namaLoco=Lokomotif 5}
+13 Sep 2024; 15:48:40 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=200x100x200, status=Maintenance, kodeLoco=2db885be-7f47-4d2a-9392-3c1c3d20665d, jam=15:48:40, namaLoco=Lokomotif 2}
+13 Sep 2024; 15:48:50 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=500x400x300, status=Available, kodeLoco=edfd3d07-ffcf-48e2-be58-0e5809716871, jam=15:48:50, namaLoco=Lokomotif 2}
+13 Sep 2024; 15:49:00 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=300x200x200, status=Available, kodeLoco=6724d2e6-4403-4208-8dbf-018d8566b614, jam=15:49:00, namaLoco=Lokomotif 7}
+13 Sep 2024; 15:49:00 PM c.e.locomotive.services.MongoService INFO: Fetching from MongoDB...
+13 Sep 2024; 15:49:00 PM c.e.locomotive.services.MongoService INFO: Locomotives Fetched Successfully
+13 Sep 2024; 15:49:00 PM c.e.locomotive.services.MongoService INFO: Updated Locomotive Status: Locomotive(kodeLoco=759009d7-cac3-461a-8c57-8753b52436ce, namaLoco=Lokomotif 10, dimensiLoco=200x100x200, status=Not Available, tanggal=13/09/2024, jam=15:25:01)
+13 Sep 2024; 15:49:00 PM o.s.s.s.TaskUtils$LoggingErrorHandler ERROR: Unexpected error occurred in scheduled task
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.example.locomotive.models.LocomotiveStatus.getNonActive()" is null
+	at com.example.locomotive.services.MongoService.updateLocomotiveStatus(MongoService.java:114)
+	at com.example.locomotive.services.MongoService.fecthData(MongoService.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13 Sep 2024; 15:49:00 PM c.e.l.components.TelegramBotReport ERROR: Unable to deserialize response
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:132)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:32)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:1045)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:64)
+	at com.example.locomotive.components.TelegramBotReport.sendTelegramMessage(TelegramBotReport.java:43)
+	at com.example.locomotive.components.TelegramBotReport.sendLatestSummary(TelegramBotReport.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61] (through reference chain: org.telegram.telegrambots.meta.api.objects.ApiResponse["result"]->org.telegram.telegrambots.meta.api.objects.Message["from"]->org.telegram.telegrambots.meta.api.objects.User["id"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:361)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1937)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:312)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3848)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3831)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:124)
+	... 18 common frames omitted
+Caused by: com.fasterxml.jackson.core.exc.InputCoercionException: Numeric value (6688476756) out of range of int (-2147483648 - 2147483647)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 61]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInputCoercion(ParserMinimalBase.java:562)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowInt(ParserMinimalBase.java:624)
+	at com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt(ParserBase.java:1059)
+	at com.fasterxml.jackson.core.base.ParserBase._parseIntValue(ParserBase.java:983)
+	at com.fasterxml.jackson.core.base.ParserBase.getIntValue(ParserBase.java:789)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:526)
+	at com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310)
+	... 30 common frames omitted
+13 Sep 2024; 15:49:10 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=500x400x300, status=Maintenance, kodeLoco=a12966a6-9481-4af9-a67c-89eb4b370df3, jam=15:49:10, namaLoco=Lokomotif 3}
+13 Sep 2024; 15:49:20 PM c.e.l.services.SchedulerService INFO: Sending dummy data to node JS: {tanggal=13/09/2024, dimensiLoco=200x100x200, status=Available, kodeLoco=4967e6a0-189a-42bc-87f7-df1f2d4f3d21, jam=15:49:20, namaLoco=Lokomotif 1}
+13 Sep 2024; 15:49:28 PM o.s.o.j.LocalContainerEntityManagerFactoryBean INFO: Closing JPA EntityManagerFactory for persistence unit 'default'
+13 Sep 2024; 15:49:28 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-2 - Shutdown initiated...
+13 Sep 2024; 15:49:28 PM com.zaxxer.hikari.HikariDataSource INFO: HikariPool-2 - Shutdown completed.
