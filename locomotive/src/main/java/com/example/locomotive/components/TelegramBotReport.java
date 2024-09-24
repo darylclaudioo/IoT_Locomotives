@@ -17,8 +17,8 @@ import com.example.locomotive.services.TelegramService;
 @DependsOn("mongoService")
 public class TelegramBotReport extends TelegramLongPollingBot {
     private TelegramService telegramService;
-    private static final String BOT_TOKEN = "7209761146:AAHB_ipN11oXunNd8vNgoCmtqgtePjmV8bs";
-    private static final String CHAT_ID = "6432640256";
+    private static final String BOT_TOKEN = "BOT_TOKEN";
+    private static final String CHAT_ID = "CHAT_ID";
 
     private static final Logger logger = LoggerFactory.getLogger(TelegramBotReport.class);
 
